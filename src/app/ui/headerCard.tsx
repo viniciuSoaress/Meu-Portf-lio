@@ -30,7 +30,7 @@ export function HeaderCard() {
         <h1 className="text-xl font-semibold">Olá! Sou, <br /> {user.name}.</h1>
         <p>
           desenvolvedor
-          <a className="text-lg text-cyan-400 font-semibold"
+          <a className="text-lg text-cyan-300 font-semibold"
             href="https://react.dev/"
             target="_blank"> React.js </a>
 
