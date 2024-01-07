@@ -11,7 +11,8 @@ export default function Home() {
     <Main>
       <HeaderCard />
 
-      <h2>Habilidades Em!</h2>
+      <h2 className="font-semibold border-b border-neutral-600 text-lg">Habilidades Em!</h2>
+     
       <CardTec.Root>
 
         <CardTec.Card>
@@ -43,7 +44,8 @@ export default function Home() {
 
       </CardTec.Root>
 
-      <h2>Projetos</h2>
+      <h2 className="font-semibold border-b border-neutral-600 text-lg">Projetos</h2>
+
       <Projects />
     </Main>
   )

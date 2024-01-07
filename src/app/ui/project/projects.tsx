@@ -1,34 +1,29 @@
 'use client'
 
-import { useEffect, useState } from "react"
-import { URL } from "../../utils/url"
-import type { Repos } from "@/app/utils/types/repos"
+import Link from "next/link"
 import { ItemProject } from "./itemProject"
 
+import { useRepository } from "@/app/utils/hooks/useRepository"
 
 
+export function Projects() {
 
-export function Projects(){
+  const { projects } = useRepository()
+  
+  const pros = projects.slice(3, 9)
 
-  const [projects, setProjects] = useState<Repos[]>([])
-  const pros = projects.slice(3,9)
 
-  useEffect(() => {
-    async function handleRepos(){
-      const datas = await fetch(`${URL}/repos`)
-      const data:Repos[] = await datas.json()
-      setProjects(data)
-      
-    } 
-    handleRepos()
-  },[])
 
   return (
-    <article className="flex sm:flex-row flex-wrap flex-col max-w-screen-xl w-full p-4  gap-6 justify-between">
-      {pros.map(pro => (
-        <ItemProject item={pro} key={pro.id}/>
-      ))}
-    </article>
+    <div className="relative">
+      <article className="flex sm:flex-row flex-wrap flex-col max-w-screen-xl w-full p-4  gap-6 justify-between">
+
+        {pros.map(pro => (
+          <ItemProject item={pro} key={pro.id} />
+        ))}
+      </article>
+      <Link href='/projetos' className="text-sm absolute right-1">Mais...</Link>
+    </div>
   )
 
 }
