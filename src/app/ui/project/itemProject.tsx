@@ -1,15 +1,16 @@
 import type { Repos } from "@/app/utils/types/repos"
 
 type Props = {
-  item: Repos
+  item: Repos,
+  home?: boolean
 }
 
-export function ItemProject({ item }: Props) {
+export function ItemProject({ item, home }: Props) {
 
   return (
-    <div className="flex-1 border border-neutral-600 rounded-lg p-4 relative">
+    <div className={`${home ? 'flex-1': 'w-52'} border border-neutral-600 rounded-lg p-4 relative`}>
 
-      <h2 className="font-semibold text-xs border-b mb-1">{item.name}</h2>
+      <h2 className="font-semibold text-xs border-b mb-3">{item.name}</h2>
       <p className="font-light text-xs text-gray-200 mb-2">{item.description}</p>
       
       <div className="flex justify-between w-full px-6 absolute left-0 bottom-1">
