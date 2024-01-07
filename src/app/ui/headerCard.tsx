@@ -2,8 +2,8 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { URL } from "../utils/url"
 
-const URL = 'https://api.github.com/users/viniciuSoaress'
 
 type User = {
   avatar_url: string,

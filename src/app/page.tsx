@@ -2,6 +2,7 @@ import { HeaderCard } from "./ui/headerCard";
 import { Main } from "./ui/main";
 import { CardTec } from "./ui/cardTec";
 import { tecs } from "./utils/tec";
+import { Projects } from "./ui/project/projects";
 
 import { GlobeAltIcon, ServerStackIcon, ComputerDesktopIcon } from '@heroicons/react/24/solid'
 
@@ -41,6 +42,9 @@ export default function Home() {
         </CardTec.Card>
 
       </CardTec.Root>
+
+      <h2>Projetos</h2>
+      <Projects />
     </Main>
   )
 }
