@@ -6,7 +6,7 @@ import { URL } from "@/app/utils/url"
 
 
 
-export function useRepository(){
+export function useRepository() {
   const [projects, setProjects] = useState<Repos[]>([])
 
 
@@ -14,6 +14,7 @@ export function useRepository(){
     async function handleRepos() {
       const datas = await fetch(`${URL}/repos`)
       const data: Repos[] = await datas.json()
+
       setProjects(data)
 
     }

@@ -13,7 +13,7 @@ export function ListProjects() {
 
   return (
     <div className="relative">
-      <article className="flex sm:flex-row flex-wrap flex-col max-w-screen-xl w-full p-4  gap-6 justify-between">
+      <article className="flex sm:flex-row flex-wrap flex-col max-w-screen-xl w-full p-4 justify-center gap-6">
 
         {projects.map(pro => (
           <ItemProject item={pro} key={pro.id} />

@@ -24,7 +24,7 @@ export function HeaderCard() {
   }, [])
 
   return (
-    <section className="flex flex-col gap-8 items-center border border-neutral-600 p-6 rounded-2xl w-full">
+    <header className="flex flex-col gap-8 items-center border border-neutral-600/30 p-6 rounded-2xl w-full">
 
       <div className=" flex gap-6 items-center">
         <div className="rounded-3xl  bg-gradient-to-r from-cyan-200/60 to-green-300/70 p-[2px] h-full">
@@ -67,6 +67,6 @@ export function HeaderCard() {
         E é isso.
       </p>
 
-    </section>
+    </header>
   )
 }
