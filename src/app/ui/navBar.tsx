@@ -17,7 +17,7 @@ export function NavBar() {
   const path = usePathname()
 
   return (
-    <nav className="flex max-w-screen-xl w-full m-auto p-5 gap-4 border-x justify-end border-neutral-600">
+    <nav className="flex max-w-screen-xl w-full m-auto p-3 gap-4 border-x justify-end border-neutral-600">
       {links.map(l => {
         const isPath = path == l.link
         return (

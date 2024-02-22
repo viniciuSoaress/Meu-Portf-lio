@@ -4,10 +4,15 @@
 
   Com as seguintes rotas, Home, Projetos e Sobre.
 
-<img src="./public/screenShot.png" alt='photo' width='381' heigth=''>
+<img
+  src="./public/screenShot.png"
+  alt='photo'
+  width='381'
+  heigth=''
+>
 
 
-## Tecnologias Utilizadas
+## 🔗 Tecnologias Utilizadas
 
 - React.js
   - Composition
@@ -15,4 +20,3 @@
 - TailwindCSS
 - Estrutuara de Roteamento do Next.js 14
 - API de dados do GitHub
-

@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <Main>
       <HeaderCard />
+      
 
       <h2 className="font-semibold border-b border-neutral-600 text-lg">Habilidades Em!</h2>
      
